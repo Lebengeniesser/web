@@ -1,0 +1,55 @@
+body{
+    margin:0;
+}
+#hh{
+    height: 50px;
+    background-color: gray;
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding:5px;
+    padding-left: 10px;
+    padding-top:10px;
+}
+#ht{
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    padding-top:10px;
+    border-right: 10px solid gray;
+    
+}
+.road{
+    height:50px;
+    padding-top:25px;
+    border:gray solid;
+    padding-left: 30px;
+}
+#gg{
+    padding-left:400px;
+    padding-right:400px;
+    padding-top: 30px;
+    background-color: gainsboro;
+    
+}
+.farbe{
+    width:80px;
+    height:20px;
+    background-color: orange;
+    color:white;
+    text-align:center;
+}
+#bb{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media(max-width:1025px){
+    #gg{
+        padding-left:0;
+        padding-right:0;
+    }    
+}
+.Top{
+    
+}

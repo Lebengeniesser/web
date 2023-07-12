@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Boxmodel</title>
+	<style>
+		/* 내가 정한 content만 태그하는 것을 inline element */
+		a {
+			/* 테두리에대한내용 */
+			border-width:5px;
+			border-color:red;
+			border-style:solid;
+			/* display:none; */
+		}
+		/* 전체를 태그하는 것을 block level element라고 한다. */
+		h1 {
+			/* 테두리에대한내용 */
+			border-width:5px;
+			border-color:red;
+			border-style:solid;
+			/* 전체를 포함하지만 inline으로 바꿔주기위해서 */
+			/* display:inline; */
+		}
+		/*
+		h1,a {
+			이 아래 부분들은 중복이 되므로 h1, a 와 같이 사용할 수 있음. display를 주게되면 따로 써야하지만
+			border-width:5px;
+			border-color:red;
+			border-style:solid;
+			=> 이것 3개도 줄일 수 있다. border:5px solid red; 이렇게 순서는 중요하지 않음.
+		}  
+		*/
+	h2 {
+		border:5px solid red;
+		/* 왼쪽에 공간이 없기때문에 주기위한 함수는 padding이다 박스 안의 공간주기*/
+		padding:20px;
+		/* 테두리사이에 간격을 주거나 없애기위함은 margin */
+		margin:20px;
+		
+		/* 100px의 너비만큼 잘려짐 display:block과 같은 효가 줄 수 있음.*/
+		width:100px;
+	}	
+	</style>
+	</head>
+
+	<body>
+		<h1>CSS이란?</h1>
+		Let's make more beutiful website!(<a href="https://namu.wiki/w/CSS">CSS</a>)
+		<br><br><br>
+		second example
+		<h2>CSS</h2>
+		<h2>CSS</h2>
+	</body>
+</html>

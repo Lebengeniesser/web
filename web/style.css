@@ -1,0 +1,48 @@
+/* 누구에게 css기능을 해야한다는 선택자{}를 이용한 방법 1 , a는 선택자로써 모든을 의미함*/
+body {
+    margin:0;
+}
+a {
+    color:black;
+    /* 뭐든 텍스특 밑의 밑줄을 제거함, 효과를구분하기 위해서 ;를 사용한다. */
+    text-decoration: none;
+}
+h1 {
+    font-size:300%;
+    text-align: center;
+    border-bottom:5px solid gray;
+    margin:0;
+    padding:20px;
+}
+        
+ol {
+    border-right:10px red solid;
+    width:100px;
+    margin:0;
+    padding:20px;
+    
+}
+/* grid의 자식인 ol 그냥 ol을 하면 ol의미가 있는데서 더 붙이는 것이기 때문에 자식에 있는것을 보기 쉽게하기 위해서 이렇게 씀 만약 두개다 id 같을 가지면 ex) #grid #activiti라고 적어줄 수 있음.*/
+#grid ol {
+    padding-left:33px;
+}
+#grid {
+    display:grid;
+    grid-template-columns:150px 1fr;
+}
+#right_side {
+    padding-left:25px;
+}
+
+@media(max-width:800px) {
+    #grid {
+    display:block;
+    }
+    ol {
+    border-right:none;
+    }
+    h1 {
+    border-bottom:none;
+    }
+    
+}
